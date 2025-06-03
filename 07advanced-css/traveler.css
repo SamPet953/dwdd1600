@@ -1,0 +1,294 @@
+/* =Prevent Problems on Different Browsers*/
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-family: "Karla", sans-serif;
+     margin: 0;
+}
+
+/* header stuff here*/
+header {
+     background-color: #2F4E3E;
+     padding: 1rem 10px;
+}
+
+header span {
+     color: #F5F3E7;
+     font-size: 1.6rem;
+     font-weight: 800;
+}
+
+/* small screen navigation */
+@MEDIA only screen and (max-width: 800px) {}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+}
+
+nav a {
+     display: block;
+     text-align: center;
+     padding: .8rem;
+     color: #2F4E3E;
+     text-decoration: none;
+     border-bottom: solid 1px #eee;
+     font-weight: 800;
+     text-transform: uppercase;
+}
+
+nav .active a {
+     background-color: #2F4E3E;
+     color: white;
+     background-image: linear-gradient(to bottom, #2f4e3e, #1e342a);
+
+}
+
+/* end small screen */
+
+
+
+
+/* LARGE SCREEN NAVIGAION */
+@MEDIA only screen and (min-width: 801px) {
+     nav nav {
+          background-color: #F5F3E7;
+          height: 48px;
+     }
+
+     nav ul {
+          margin: 0;
+          padding: 0 10px;
+          list-style-type: none;
+          display: flex;
+     }
+
+     nav a {
+          display: block;
+          padding: .83rem 1rem;
+          text-decoration: none;
+          font-size: 1.1rem;
+          color: #2F4E3E;
+          font-weight: 800;
+     }
+
+     nav li.active a {
+          background-color: #2F4E3E;
+          color: #F5F3E7
+     }
+
+     nav li a:hover {
+          color: #e8a992;
+     }
+
+}
+
+/* end large screen */
+
+
+
+/* main stuff here */
+main {
+     padding: 1rem 10px;
+}
+
+main h1 {
+     color: #2F4E3E;
+}
+
+main h2 {
+     color: #2F4E3E;
+     margin-bottom: .2rem;
+
+}
+
+main p {
+     margin: 0;
+     color: #333;
+}
+
+main ol {
+     padding: .5rem 30px;
+     background-color: #F5F3E7;
+}
+
+main dl dt {
+     color: #e8a992;
+     font-weight: 800;
+     margin-top: 1rem;
+}
+
+main dl dd {
+     color: #2F4E3E;
+     font-size: .9rem;
+     margin-left: 20px;
+}
+
+main ul {
+     list-style-type: circle;
+     margin-top: .5rem;
+     font-size: .9rem;
+
+}
+
+main strong {
+     font-weight: 800;
+     color: black;
+}
+
+main em {
+     font-weight: 300;
+}
+
+main address {
+     font-style: normal;
+     background-color: #F5F3E7;
+     padding: .5rem;
+     border-radius: 10px;
+     border: 1px solid #2F4E3E;
+     width: 200px;
+}
+
+main a {
+     color: #2F4E3E;
+}
+
+.hero {
+     width: 100%;
+     height: auto;
+}
+
+main a:hover {
+     color: rgb(211 104 62)
+}
+
+/* main image stuff here */
+figure.wrapped {
+     margin: 0 0 0 10px;
+     width: 40%;
+     float: right;
+}
+
+figure.wrapped img {
+     width: 100%;
+     height: auto;
+
+}
+
+figure.wrapped figcaption {
+     text-align: center;
+     font-size: .75rem;
+}
+
+/* gallery stuff */
+div.gallery {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px 10px;
+
+}
+
+div.gallery figure {
+     margin: 0;
+
+}
+
+div.gallery img {
+     width: 98%;
+     height: auto;
+     border-radius: 5px;
+}
+
+div.gallery img:hover {
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.gallery figcaption {
+     text-align: center;
+     font-size: .8rem;
+     color: #2F4E3E;
+
+
+}
+
+.myForm fieldset {
+     border: 1px solid #2F4E3E;
+     border-radius: 3px;
+     margin-bottom: 1rem;
+}
+
+.myForm legend {
+     color: #2F4E3E;
+     font-size: .8rem;
+
+}
+
+.myForm label {
+     margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm textarea {
+     display: block;
+
+}
+
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm select,
+.myForm textarea {
+     border: solid 1px #888;
+     padding: .3rem;
+     width: 250px;
+     border-radius: .3rem;
+     font-family: "Karla", sans-serif;
+
+}
+
+.myForm textarea {
+     height: 6rem;
+}
+
+.myForm :required {
+     background-color: rgba(47, 78, 62, 0.1);
+}
+
+.myForm [type=submit] {
+     background-color: #2F4E3E;
+     border: none;
+     padding: 1rem 2rem;
+     border-radius: 10px;
+     color: white;
+     margin: 1rem 0 0 1vw;
+}
+
+/* footer stuff here */
+
+footer {
+     background-color: #F5F3E7;
+     text-align: center;
+     padding: 1rem 0;
+}
+
+footer p {
+     margin: 0;
+     font-size: .8rem;
+     color: #333;
+     letter-spacing: 3px;
+}
+
+header,
+nav,
+main,
+footer {
+     max-width: 64rem;
+     margin: 0 auto;
+
+}
