@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samantha Peterson">
+    <meta name="description" content="To inform users about what we do and encourage them to explore vaction options.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="travelor.css">
+    <title>Beyond Horizons: Welcome</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <img src="images/logo.png" alt="Logo for Beyond Horizons" width="43" height="50">
+        <span>Beyond Horizons</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="explore_destinations.html">Explore Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="travel_highlights.html">Travel Highlights</a></li>
+            <li class="active"><a href="start_your_adventure.html">Start Your Adventure</a></li>
+
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Start Your Adventure</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>Full Name*<input type="text" name="fullname" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required placeholder="801-123-1324"></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>What kind of vacation are you looking for?</legend>
+                <label> <input type="radio" name="method" value="relaxed">Relaxing Beach Getaway
+                </label>
+                <label> <input type="radio" name="method" value="adventure">Outdoor Adventure
+                </label>
+                <label> <input type="radio" name="method" value="culture">Culture Exploration
+                </label>
+                <label> <input type="radio" name="method" value="family">Family-Friendly Fun
+                </label>
+                <label> <input type="radio" name="method" value="all">All the Above!
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Where are you most interested in going?</legend>
+                <label> <input type="checkbox" name="indonesia" value="chosen">Bali, Indonesia
+                </label>
+                <label> <input type="checkbox" name="greece" value="chosen">Santorini, Greece
+                </label>
+                <label> <input type="checkbox" name="canada" value="chosen">Banff, Canada
+                </label>
+                <label> <input type="checkbox" name="japan" value="chosen">Kyoto, Japan
+                </label>
+                <label> <input type="checkbox" name="mexico" value="chosen">Tulum, Mexico
+                </label>
+                <label> <input type="checkbox" name="peru" value="chosen">Cusco, Peru
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Time Frame</legend>
+                <label>How soon are you planning to travel?
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="month">Within the next month</option>
+                        <option value="1_3_months">1-3 months from now</option>
+                        <option value="3_6_months">3-6 months from now</option>
+                        <option value="over_6_months">Over 6 months from now</option>
+                        <option value="exploring">Just exploring options</option>
+                    </select>
+                </label>
+
+            </fieldset>
+            <label>Share any special requests or questions
+                <textarea name="comments"></textarea>
+            </label>
+
+
+
+            <input type="submit" value="Begin My Adventure!">
+        </form>
+
+    </main>
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Samantha Peterson &bull; Web Essentials</p>
+
+    </footer>
+
+</body>
+
+</html>
